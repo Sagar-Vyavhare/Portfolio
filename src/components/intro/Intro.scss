@@ -1,0 +1,61 @@
+.intro {
+  background-color: white;
+  display: flex;
+  .right {
+    background-color: inherit;
+    flex: 0.5;
+    position: relative;
+    .wrapper {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    //   align-items: flex-start;
+      justify-content: center;
+      padding-left: 2.5rem;
+      h1 {
+        font-size: 3rem;
+        padding: 0.5rem 0;
+        color: rgb(108, 16, 119);
+      }
+    }
+    a {
+      position: absolute;
+      bottom:0;
+      left: 50%;
+      animation: shake 1s ease infinite alternate;
+      .arrow_icon {
+        transform: rotate(-90deg);
+        font-size: 3rem;
+      }
+
+      @keyframes shake {
+          100%{
+              bottom: 20px;
+          }
+          0%{
+            opacity: 1;
+          }
+      }
+    }
+  }
+  .left {
+    background-color: inherit;
+    flex: 0.5;
+    overflow: hidden;
+    .image_container {
+      background-color: #d82a2a;
+      border-radius: 50%;
+      height: 700px;
+      width: 700px;
+      display: flex;
+      justify-content: center;
+      // align-items: flex-end;
+      float: right;
+      img {
+        width: 90%;
+      }
+    }
+    
+  }
+}
